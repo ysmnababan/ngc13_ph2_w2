@@ -35,5 +35,6 @@ func main() {
 		buy.GET("/store/:id", h.GetDetailStore)
 		buy.POST("/transactions", h.BuyProduct)
 	}
+	logger.Logging(nil).Info("Program started.....")
 	e.Logger.Fatal(e.Start(":8080"))
 }
